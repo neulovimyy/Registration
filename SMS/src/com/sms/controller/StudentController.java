@@ -1,10 +1,12 @@
 package com.sms.controller;
 		
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -32,12 +34,12 @@ public class StudentController extends BaseController{
 	
 	@SuppressWarnings("unchecked")
 	@RequestMapping(value = "save", method = RequestMethod.POST)
-	public String saveEmployee(@ModelAttribute("command") 
-			Student cstudent, ModelMap map) {
+	public void saveStudent(@ModelAttribute("command") Student cstudent, ModelMap map, HttpServletRequest request, HttpServletResponse response) throws IOException {
 		List<Student> students =  (List<Student>) studentService.getAll(Student.class);
 		map.put("students", students);
 		studentService.addStudent(cstudent);
-		return "studentList";
+		
+		response.sendRedirect(request.getContextPath() + "/student/students");
 	}
 
 	@RequestMapping(value="students", method = RequestMethod.GET)

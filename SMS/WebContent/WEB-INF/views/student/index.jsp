@@ -9,8 +9,8 @@
 	</div>
 
 	<div class="jumbotron">
-	    <h2 align="center"><a class="btn btn-lg btn-success glyphicon glyphicon-cloud" href="students.html">Show Students</a></h2>
-	    <h2 align="center"><a class="btn btn-lg btn-success glyphicon glyphicon-cloud" href="add.html">Add Students</a></h2>
+	    <h2 align="center"><a class="btn btn-lg btn-success glyphicon glyphicon-cloud" href="${pageContext.request.contextPath}/student/students">Show Students</a></h2>
+	    <h2 align="center"><a class="btn btn-lg btn-success glyphicon glyphicon-cloud" href="${pageContext.request.contextPath}/student/add">Add Students</a></h2>
 	</div>
 	 
 	<!-- <form method="post" action="students.html">

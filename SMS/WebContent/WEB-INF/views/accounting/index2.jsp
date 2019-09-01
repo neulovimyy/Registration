@@ -18,8 +18,8 @@
 	</div>
  
 	<div class="jumbotron">
-	    <h2 align="center"><a class="btn btn-default btn-lg btn-block" href="transaction.html">Show accounts</a></h2>
-	    <h2 align="center"><a class="btn btn-default btn-lg btn-block" href="add.html">Add Students</a></h2>
+	    <h2 align="center"><a class="btn btn-default btn-lg btn-block" href="${pageContext.request.contextPath}/accounting/transaction">Show accounts</a></h2>
+	    <h2 align="center"><a class="btn btn-default btn-lg btn-block" href="${pageContext.request.contextPath}/accounting/add">Add Students</a></h2>
 	</div>
 	 
 	<!-- <form method="post" action="students.html">

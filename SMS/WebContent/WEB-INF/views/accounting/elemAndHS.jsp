@@ -4,7 +4,7 @@
 <%@include file="../common/taglibs.jsp" %>
 
 		<h2>Student Accounting Information</h2>
-		<form:form id="save-accountingInfo" method="POST" commandName="account" action="/SMS/account/save.html">
+		<form:form id="save-accountingInfo" method="POST" commandName="account" action="${pageContext.request.contextPath}/account/save">
 	   		
 		<c:if test="${!empty accounts}"> 
 				       

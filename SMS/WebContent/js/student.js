@@ -1,7 +1,9 @@
 
 $(document).ready(function(){
-	$
-	$('#birthDate').datepicker();
+	
+	$('#birthDate').datepicker({
+		format: 'mm/dd/yyyy'
+	});
 	$('#save-student').bootstrapValidator({
 		framework: 'bootstrap',
     	message: 'This value is not valid.',
